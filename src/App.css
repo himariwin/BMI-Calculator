@@ -1,38 +1,92 @@
-.App {
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ff4d6d;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #202020;
+  margin-top: 20px;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  margin: 12px 0;
+  display: flex;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.area-input {
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.area-input input {
+  text-align: center;
+  background-color: #DCDCDC;
+  color: #202020;
+  font-size: 16px;
+  height: 46px;
+  width: 75%;
+  margin-bottom: 12px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.area-input input::placeholder {
+  text-align: center;
+  color: #202020;
+}
+
+.area-input input:hover {
+  text-align: center;
+  background-color: rgb(220, 220, 220, 0.8);
+}
+
+.area-input button {
+  margin-bottom: 1em;
+  background-color: #ff4d6d;
   color: white;
+  height: 46px;
+  width: 75%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.area-input button:hover {
+  background-color: #ff758f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+p {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* When the screen size is less than 500px */
+@media (max-width: 500px) {
+  .area-input {
+    width: 300px;
   }
 }
