@@ -86,6 +86,10 @@ p {
 
 /* When the screen size is less than 500px */
 @media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+  
   .area-input {
     width: 300px;
   }
